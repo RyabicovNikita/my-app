@@ -9,7 +9,7 @@ function App() {
 
 	function onInputButtonClick() {
 		const userValue = prompt('Введите значение');
-		if (userValue.length < 3) {
+		if (userValue?.length < 3) {
 			hideErrorMsg(true);
 			return;
 		} else hideErrorMsg(false);
@@ -28,7 +28,7 @@ function App() {
 		<ul className={styles.list}>
 			{values.map((value) => (
 				<li className={styles['list-item']} key={value.id}>
-					{value.text}
+					<span className={styles.createDate}>{value.createDate}</span>- <b>{value.text}</b>
 				</li>
 			))}
 		</ul>

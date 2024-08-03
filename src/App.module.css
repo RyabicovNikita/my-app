@@ -10,7 +10,6 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-
 :root {
 	--accent-color-hue: 236;
 	--accent-color-saturation: 100%;
@@ -34,8 +33,6 @@ code {
 	color: var(--error-color);
 	font-weight: bold;
 }
-
-
 
 .page-heading {
 	margin: 0 0 0.5rem;
@@ -96,4 +93,8 @@ code {
 
 .list-item:not(:last-child) {
 	margin-bottom: 0.5em;
+}
+.createDate {
+	font-style: italic;
+	margin-right: 10px;
 }
